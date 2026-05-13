@@ -63,9 +63,9 @@
 
 | Model | Rating | Notes |
 |---|---|---|
-| Claude 3.5 Sonnet | ⭐⭐⭐⭐☆ | [1-line reason] |
-| GPT-4o | ⭐⭐⭐☆☆ | [1-line reason] |
-| Mistral Large | ⭐⭐⭐⭐☆ | [1-line reason] |
+| Claude 3.5 Sonnet | 4/5 | [1-line reason] |
+| GPT-4o | 3/5 | [1-line reason] |
+| Mistral Large | 4/5 | [1-line reason] |
 
 ---
 
