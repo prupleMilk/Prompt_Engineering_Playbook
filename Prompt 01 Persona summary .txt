@@ -1,0 +1,89 @@
+---
+
+# Prompt #01 — Summarization of Information with a persona
+
+**Category:** Summarization
+**Difficulty:** Beginner
+**Models tested:** Claude 4.6 Sonnet | Grok
+**Date tested:** 2026-05-15
+
+---
+
+## Use case
+
+> What real-world problem does this prompt solve? Who would use it and why?
+
+When researching a topic, summarization can be the difference between spending hours versus days looking for information. Having the ability to see what an article or paper is covering can help make the research process much quicker, letting a person focus more on articulating what they are trying to say.
+
+---
+
+## Prompt v1 — First attempt
+
+```
+summarize this article https://www.artificialintelligence-news.com/news/deloitte-scale-autonomous-intelligence-for-real-growth/
+```
+
+---
+
+## What happened
+
+**Claude:** Claude was able to return a summary of the article; however, what it returned was the summary of the summary already presented at the beginning of the article. There was no mention of the rest of the article, which discussed what systems Deloitte was using AI in to help improve metrics for growth in the company.
+
+**Grok:** Grok was able to give a much better breakdown of the whole article. It covered what Claude covered, but also covered the rest of the article that Claude missed. Grok also provided key points of the article before summarizing it.
+
+**What didn't work:**
+- The prompt was vague, so both summaries were very basic — great for an overview, but not ideal if someone was looking for details the article might cover.
+- There is not a great balance across the different sections of the article. Some sections were covered more than others.
+
+---
+
+## Prompt v2 — Improved version
+
+```
+Act like you are an AI advocate for your company and want to show how to better use AI in your day-to-day business. Summarize this article 
+https://www.artificialintelligence-news.com/news/deloitte-scale-autonomous-intelligence-for-real-growth/. Make sure to cover the entire article and its different sections. 
+Focus on how Deloitte is using AI to improve business processes. If there are any abbreviations or jargon that a person who is not knowledgeable in the AI field might not understand, add a section at the beginning that defines the words used. Keep the summary of each section to 100 words or less.
+```
+
+**What changed and why:**
+- I added a persona to make sure the prompt had a clear point of view for what to look for in the article.
+- Adding the line to cover the entire article was to make sure nothing was skipped.
+- I added the 100-word limit because the original updated prompt did not have one, and I was given an essay in return.
+
+---
+
+## Result after iteration
+
+**Claude:** On the second prompt, Claude did a much better job summarizing the entire article with the updated prompt. Claude almost leaned into the persona a little too much. The summaries are too focused on what the persona would do if they were a real person, instead of summarizing the article — both good and bad. It is much better if you are looking for a breakdown from a perspective the user might not have, and want to see the thoughts and ideas that person could bring to the content.
+
+
+**Grok:** Grok's summary of the article was more focused on the article itself and not what the persona would want. It would be very helpful for an overall summary. It is almost the same as the first prompt, just formatted better by section with the addition of examples from the article.
+
+
+**Model comparison:** Honestly, the better model would depend on what the user wanted. If you wanted a breakdown of the article and only that — no additional insight — Grok would be the one to suggest. If you wanted more insight and a breakdown from a persona's perspective, then Claude would be the better choice. It did a great job breaking down the topics in the article and putting them in terms that were easy to understand, as well as providing a plan to apply those ideas in day-to-day business. In the end, since the prompt did ask to use a persona, I would suggest Claude — it did what it was told, and it was done extremely well. The only problem with Claude is that it did not break the article down by the titles used in the article; instead, it created its own sections based on the content.
+
+---
+
+## Effectiveness rating
+
+| Model | Rating | Notes |
+|---|---|---|
+| Claude 4.6 Sonnet | 4/5 | Easy to read and understand; it did take some creative liberties — some good, some bad. |
+| Grok Fast | 3/5 | Stuck too closely to the summarization idea and did not fulfill some of the other parts of the prompt. |
+
+---
+
+## Key lesson
+
+> The transferable principle from this experiment — what would you tell someone else to apply immediately?
+
+- Going forward, make sure to include a line in the prompt specifying how much to lean into the persona, if one is needed.
+- If you do not want an essay from the model, give it constraints on length (word count, character count, etc.).
+- Putting an emphasis on what you want to cover and how much of the source you want covered helps improve the results you get.
+
+---
+
+## Further reading / related prompts
+
+- Prompt #XXX — [related entry]
+- [External resource if relevant]
