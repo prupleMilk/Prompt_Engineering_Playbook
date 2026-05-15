@@ -2,7 +2,7 @@
 
 **Category:** Summarization
 **Difficulty:** Beginner 
-**Models tested:** Claude 4.6 Sonnet  
+**Models tested:** Claude 4.6 Sonnet | Grok
 **Date tested:** 2026-05-15
 
 ---
